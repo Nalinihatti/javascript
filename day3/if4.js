@@ -14,10 +14,10 @@ let s3 = 5;
 
 if(s1 == s2 && s2 == s3){
     console.log("Triangle is Equilateral");
-    
 }
 else if(s1 == s2 || s2 == s3) {
     console.log("Triangle is Isoceles");
 } else {
+    
     console.log("Triangle is Scalene");
 }
