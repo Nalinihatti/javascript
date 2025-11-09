@@ -12,12 +12,19 @@ let s1 = 5;
 let s2 = 5;
 let s3 = 5;
 
-if(s1 == s2 && s2 == s3){
-    console.log("Triangle is Equilateral");
+if(s1 > 0 && s2 > 0 && s3 > 0)
+{
+    if(s1 == s2 && s2 == s3){
+        console.log("Triangle is Equilateral");
+    }
+    else if(s1 == s2 || s2 == s3 || s1 == s3) {
+        console.log("Triangle is Isoceles");
+    } else {
+        
+        console.log("Triangle is Scalene");
+    }
 }
-else if(s1 == s2 || s2 == s3) {
-    console.log("Triangle is Isoceles");
-} else {
+else{
+    console.log("Invalid Triangle");
     
-    console.log("Triangle is Scalene");
 }
